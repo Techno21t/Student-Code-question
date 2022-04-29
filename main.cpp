@@ -7,19 +7,18 @@ struct info{
     string name[6];
     string Age[6]; 
 };
-
+struct info information;
 void prints(){
-    info responses;
     for(int i = 1; i<=5; ++i){
-        cout<< "student "<<i<<"'s"<<" Number: "<< responses.number[i]<<endl;
-        cout<< "student "<<i<<"'s"<<" Name: "<< responses.name[i]<<endl;
-        cout<< "student "<<i<<"'s"<<" Age: "<< responses.Age[i]<<endl;
+        cout<< "student "<<i<<"'s"<<" Number: "<< information.number[i]<<endl;
+        cout<< "student "<<i<<"'s"<<" Name: "<< information.name[i]<<endl;
+        cout<< "student "<<i<<"'s"<<" Age: "<< information.Age[i]<<endl;
         cout <<"----------------------------------------------------------\n";
     }
 }
 
 void welcome(){
-    info information;
+    
     cout<<"welcome please enter 5 Different students information below: "<<endl;
     for(int i = 1; i<=5; ++i){
         cout<<"Please enter the "<< i <<" students number: "<<endl;
